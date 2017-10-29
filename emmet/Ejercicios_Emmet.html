@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anidar elementos (>)</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>	
+	<!-------------------------------------->
+	<h2>1. Anidar elementos ( > )</h2>
+	<section>
+		<div class="ejemplo">				
+				Ejemplo: div>div>form>input
+		</div>
+			
+		<div class="resultado">
+<xmp>
+	<div>
+		<div>
+			<form action=""><input type="text"></form>
+		</div>
+	</div>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>2. Elementos hermanos ( + )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: 
+				header+nav+article+footer
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<header></header>
+<nav></nav>
+<article></article>
+<footer></footer>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+	
+<h2>3. Repetir elementos ( * )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: 
+				form>table>input*5
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<form action="">
+	<table>
+		<input type="text">
+		<input type="text">
+		<input type="text">
+		<input type="text">
+		<input type="text">
+	</table>
+</form>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+<h2>4. Atributo identificador  ( # )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: 
+				table#estudiantes
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<table id="estudiantes"></table>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>5. Atributo clase ( . )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: button.btn 
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<button class="btn"></button>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+<h2>5.1 multiples clases  ( ... )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: button.btn.btn-primary
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<button class="btn btn-primary"></button>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>6. Adicionar texto ( {  } )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: p{ texto en el parrafo}
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<p> texto en el parrafo</p>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>7. Personalizar atributos ( [ ] )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: input[type="button"]
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<input type="button">
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>8. Números consecutivos ( $ )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: div.$*3
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<div class="1"></div>
+<div class="2"></div>
+<div class="3"></div>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>8.1 Direccion números consecutivos ( @- )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: input.form-control.$@-*3
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<input type="text" class="form-control 3">
+<input type="text" class="form-control 2">
+<input type="text" class="form-control 1">
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>8.2 Base numeros consecutivos ( @n )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: input.form-control.$@10*3
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<input type="text" class="form-control 10">
+<input type="text" class="form-control 11">
+<input type="text" class="form-control 12">
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+
+<h2>9. subir de nivel  ( ^ )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: div>label.radio^div>label.radio
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<div><label for="" class="radio"></label></div>
+<div><label for="" class="radio"></label></div>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>10. Agrupar elementos "( )"</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: (header>ul.nav>li*5)+footer
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<header>
+	<ul class="nav">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</header>
+<footer></footer>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+<h2>11. Generador Lorem ipsum ( Lorem )</h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: lorem
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minima assumenda officiis sequi laudantium blanditiis sunt inventore expedita esse similique nam nobis, repellendus perferendis? Quis rerum eum sunt corrupti non.
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+	<h2>12. Documentos HTML ( html ) </h2>
+	<section>
+		<div class="ejemplo">				
+				
+				Ejemplo: html:5
+		
+		</div>
+			
+		<div class="resultado">
+<xmp>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+
+
+	<script src="js/jquery-3.2.1.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$('.resultado').hide();
+			$('section').on('click', '.ejemplo', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				$(this).next('.resultado').slideToggle('slow')
+			});
+		});
+	</script>
+
+</body>
+</html>

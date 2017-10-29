@@ -5,7 +5,7 @@ html {
 
 body {
 font: 16px Arial;
-background-color: black;
+background-color: white;
 /*background: -webkit-linear-gradient(black, white);
 background: -moz-linear-gradient(black, white);
 background: -o-linear-gradient(black, white);*/
@@ -19,14 +19,14 @@ font-size: 1.4em;
 font-weight: normal;
 margin: 0px auto;
 padding: 10px;
-width: 620px;
+width: 820px;
 }
 
 section{
 	background-color: #fff;
 	margin: 0px auto;
 	padding: 20px;
-	width:600px;
+	width:800px;
 }
 
 section div {
