@@ -1,0 +1,36 @@
+p Js en archivo pug
+section#output
+script.
+	var op = document.getElementById('output');
+	var name=prompt("what`s your name?");
+
+	op.innerHTML='<h1>Welcome: '+name+'</h1>'
+	var friends =8
+	case friends
+		when 0
+			p you have no friends
+		when 1
+			p you have a friends
+		default
+			p you have #{friends} friends
+
+	for (var i=0; i<10;i++)
+		li item
+	var list = ["red","green","blue"]
+	each item in list
+		li=item
+
+-var authorised =false
+-var user={description:"Lorem Ipsum Dolor"}
+article#user
+	if authorised
+		h2.green Description
+		p.description= user.description
+	else
+		h2.red Description
+		p.description user has no  description	
+
+// comentarios html
+//- Comentarios emmet//
+
+
