@@ -1,0 +1,10 @@
+
+mixin lista(par1,par2,par3)
+	li(class=par1)
+		a(href="https://senaintro.blackboard.com/bbcswebdav/pid-98760426-dt-content-rid-302738414_2/courses/P217111_F1562347_RG17_C9220/retoPUG.html#"+par2)=par3
+ul.nav.navbar-nav.navbar-right.main-nav
+	+lista('active','intro','Home')
+	+lista('','services','About Us')
+	+lista('','team','Cleaning')
+	+lista('','pricing','Pricing')
+	+lista('','contact','Contact')
